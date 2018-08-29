@@ -64,3 +64,115 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: rgba(5, 159, 255, .6);
+	width: 80%;
+	margin: 0 auto;
+}
+.body-container {
+	width: 60%;
+	margin: 0 auto;
+	background: white;
+	
+
+
+}
+
+nav { 	
+	background: white;
+	width: 60%;
+	display: flex;
+	position: fixed;
+	height: 60px;
+	padding-top: 15px;
+	z-index: 10px;
+	justify-content: space-between; 
+	
+
+}
+
+nav a {
+	text-decoration: none;
+	color: gray;
+	font-size: 16px;
+	padding: 10px;
+
+
+}
+
+nav .logo {
+	
+	width: 15%;
+	height: auto;
+	margin-left: 50px; 
+}
+
+.slogan-section {
+	padding-top: 60px;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	height: 20%;	
+}
+
+
+box {
+	display: flex;
+	flex-direction: column;
+}
+
+.box p {
+	text-align: center;
+
+	height: 50%;
+	font-size: 50px;	
+}
+
+.box img {
+	
+}
+
+p.button {
+	border: black solid 1px;
+	font-size: 12px;
+}
+
+.top-body {
+	display: inline-block;
+}
+
+div .left {
+	width: 50%;
+	float: left;
+
+}
+div .right {
+	width: 50%;
+	float: right;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+div .bottom-box {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+footer {
+	margin: 5px;
+}
+
+div p.copyright {
+	justify-content: center;
+	text-align: center;
+}
+
