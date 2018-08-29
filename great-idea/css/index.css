@@ -77,12 +77,14 @@ body {
 	width: 60%;
 	margin: 0 auto;
 	background: white;
-	
-
-
+}
+.services .body-container {
+	width: 60%;
+	margin: 0 auto;
+	background: white;
 }
 
-nav { 	
+header nav { 	
 	background: white;
 	width: 60%;
 	display: flex;
@@ -91,7 +93,7 @@ nav {
 	padding-top: 15px;
 	z-index: 10px;
 	justify-content: space-between; 
-	
+	margin-left: 40px;
 
 }
 
@@ -168,11 +170,33 @@ div .bottom-box {
 }
 
 footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
 	margin: 5px;
+
 }
 
-div p.copyright {
+.services footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin: 5px;
+
+}
+
+.services footer div {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	
+}
+
+
+
+div .copyright {
+	display: flex;
 	justify-content: center;
-	text-align: center;
+	
 }
 
