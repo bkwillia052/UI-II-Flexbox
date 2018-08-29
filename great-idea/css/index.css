@@ -83,17 +83,16 @@ body {
 	margin: 0 auto;
 	background: white;
 }
-
-header nav { 	
+nav { 	
 	background: white;
-	width: 60%;
+	width: 80%;
 	display: flex;
 	position: fixed;
 	height: 60px;
 	padding-top: 15px;
 	z-index: 10px;
 	justify-content: space-between; 
-	margin-left: 40px;
+	margin: 0 auto;
 
 }
 
@@ -101,18 +100,20 @@ nav a {
 	text-decoration: none;
 	color: gray;
 	font-size: 16px;
-	padding: 10px;
+	padding: 5px;
 
 
 }
 
-nav .logo {
-	
-	width: 15%;
-	height: auto;
+nav a .logo {
+	align-self: center;
 	margin-left: 50px; 
+	padding-bottom: 20px;
 }
 
+.services header img {
+	width: 100%;
+}
 .slogan-section {
 	padding-top: 60px;
 	width: 100%;
@@ -121,6 +122,35 @@ nav .logo {
 	height: 20%;	
 }
 
+.services .top-body {
+display: flex;
+flex-direction: row;
+} 
+
+.services .middle-body {
+	display: flex;
+	flex-direction: row;
+	} 
+
+	
+.services .bottom-body {
+	display: flex;
+	flex-direction: row;
+	} 
+
+.topic {
+	display: flex; 
+	flex-direction: column;
+	margin: 5px;
+}
+
+.topic h2 {
+	padding: 5px;
+}
+
+.topic p {
+	padding: 5px;
+}
 
 box {
 	display: flex;
@@ -132,10 +162,6 @@ box {
 
 	height: 50%;
 	font-size: 50px;	
-}
-
-.box img {
-	
 }
 
 p.button {
@@ -169,10 +195,13 @@ div .bottom-box {
 	margin: 0 auto;
 }
 
-footer {
+
+
+.index footer {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
 	margin: 5px;
 
 }
