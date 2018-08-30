@@ -32,7 +32,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style: square inside;
 }
 blockquote, q {
 	quotes: none;
@@ -71,7 +71,9 @@ h1, h2, h3, h4, h5 {
 body {
 	background: rgba(5, 159, 255, .6);
 	width: 80%;
-	margin: 0 auto;
+	margin: auto;
+
+
 }
 .body-container {
 	width: 60%;
@@ -83,16 +85,29 @@ body {
 	margin: 0 auto;
 	background: white;
 }
+header {
+	width: 100%;
+	display: flex;
+	height: 60px;
+	position: relative;
+	margin-bottom: 15px;
+}
 nav { 	
 	background: white;
-	width: 80%;
 	display: flex;
 	position: fixed;
 	height: 60px;
 	padding-top: 15px;
 	z-index: 10px;
-	justify-content: space-between; 
+	justify-content: space-around; 
 	margin: 0 auto;
+	width: 48%;
+	border-color: rgba(5, 159, 255, .6);
+	border-style: none ridge ridge ridge;
+	border-radius: 0 0 8px 8px;
+	border-width: 10px;
+	box-shadow: 3px 3px 5px black;
+	
 
 }
 
@@ -100,48 +115,98 @@ nav a {
 	text-decoration: none;
 	color: gray;
 	font-size: 16px;
-	padding: 5px;
+	
 
 
 }
 
 nav a .logo {
-	align-self: center;
-	margin-left: 50px; 
-	padding-bottom: 20px;
+	align-self: flex-start;
+	
 }
 
-.services header img {
+
+.services-header-img {
 	width: 100%;
+	margin-bottom: 10px;
+}
+
+.services-header {
+	margin: 20px auto;
+}
+
+.contact-header {
+	background-image: url('img/services-header.jpg');
+	width: 100%;
+	height: 200px;
+	display: flex;
+
+}
+
+.contact-header h1 {
+	justify-content: center;
+	font-size: 100px;
+	text-align: center;
+	margin: 5px auto;
 }
 .slogan-section {
-	padding-top: 60px;
+	
 	width: 100%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	height: 20%;	
+	align-items: center;
 }
 
-.services .top-body {
+.slogan-section .box {
+	height: 100%; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.box .home-button {
+	border: 2px solid black;
+	background: white;
+	font-size: 16px;
+	padding: 10px;
+	width: 75%;
+}
+
+
+.inner-body {
 display: flex;
 flex-direction: row;
+margin: 10px;
 } 
 
-.services .middle-body {
+.contact-text {
 	display: flex;
-	flex-direction: row;
-	} 
+	flex-direction: column;
+	width: 50%;
+	justify-content: center;
+	margin: auto; 
+	align-items: center;
+}
 
-	
-.services .bottom-body {
+.inner-body .contact-form {
 	display: flex;
-	flex-direction: row;
-	} 
+	flex-direction: column;
+	justify-content: center;
+	
+	width: 100%;
+}
 
 .topic {
 	display: flex; 
 	flex-direction: column;
 	margin: 5px;
+}
+
+.services .topic {
+	background: lightgray;
+	border: black 1px solid; 
 }
 
 .topic h2 {
@@ -150,6 +215,16 @@ flex-direction: row;
 
 .topic p {
 	padding: 5px;
+	margin: 5px;
+}
+
+.topic button {
+	width: 30%; 
+	height: auto;
+	background: white; 
+	border-radius: 5px;
+	margin: 10px;
+	padding: 10px;
 }
 
 box {
@@ -159,7 +234,7 @@ box {
 
 .box p {
 	text-align: center;
-
+	font-family: 'Bangers', cursive;
 	height: 50%;
 	font-size: 50px;	
 }
@@ -169,31 +244,12 @@ p.button {
 	font-size: 12px;
 }
 
-.top-body {
-	display: inline-block;
-}
 
-div .left {
-	width: 50%;
-	float: left;
-
-}
-div .right {
-	width: 50%;
-	float: right;
-}
 
 .middle-img {
 	width: 100%;
 }
 
-div .bottom-box {
-	width: 30%;
-	display: inline-block;
-	vertical-align: top;
-	padding: 5px;
-	margin: 0 auto;
-}
 
 
 
@@ -211,6 +267,7 @@ div .bottom-box {
 	flex-direction: row;
 	justify-content: space-evenly;
 	margin: 5px;
+	padding: 10px;
 
 }
 
@@ -227,5 +284,9 @@ div .copyright {
 	display: flex;
 	justify-content: center;
 	
+}
+
+.contact footer {
+	height: 50%
 }
 
